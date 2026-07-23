@@ -44,8 +44,8 @@
             key-positions = <1 2>;
         };
 
-        doubleQuot {
-            bindings = <&kp DOUBLE_QUOTES>;
+        at {
+            bindings = <&kp AT_SIGN>;
             key-positions = <2 3>;
         };
 
@@ -61,27 +61,67 @@
 
         per {
             bindings = <&kp PERCENT>;
-            key-positions = <16 17>;
+            key-positions = <26 27>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <28 29>;
         };
 
         and {
             bindings = <&kp AMPS>;
+            key-positions = <16 17>;
+        };
+
+        aster {
+            bindings = <&kp ASTERISK>;
             key-positions = <5 6>;
         };
 
-        singleQuot {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <6 7>;
-        };
-
         lpar {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <7 8>;
+            bindings = <&kp LPAR>;
+            key-positions = <6 7>;
         };
 
         rpar {
             bindings = <&kp RPAR>;
-            key-positions = <8 9>;
+            key-positions = <7 8>;
+        };
+
+        lessThan {
+            bindings = <&kp COMMA>;
+            key-positions = <28 29>;
+        };
+
+        gt {
+            bindings = <&kp PERIOD>;
+            key-positions = <29 30>;
+        };
+
+        fl {
+            bindings = <&kp FSLH>;
+            key-positions = <30 31>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <16 17>;
+        };
+
+        eq {
+            bindings = <&kp EQUAL>;
+            key-positions = <17 18>;
+        };
+
+        lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <18 19>;
+        };
+
+        rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <19 20>;
         };
     };
 
@@ -111,8 +151,8 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                          &kp T                                                                   &kp Y        &kp U  &lt 5 I    &kp O      &kp P
-&kp A             &kp S         &kp D         &kp F                          &kp G                        &kp LS(LG(S))               &trans         &kp H        &kp J  &kp K      &kp L      &trans
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B                        &mkp MCLK                   &trans         &kp N        &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT SLASH
+&kp A             &kp S         &kp D         &kp F                          &kp G                        &kp LS(LG(S))               &kp SQT        &kp H        &kp J  &kp K      &kp L      &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B                        &mkp MCLK                   &kp BACKSLASH  &kp N        &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_MUHENKAN  &lt_to_layer_0 3 INT_HENKAN  &lt_to_layer_0 1 SPACE      &kp BACKSPACE  &lt 2 ENTER                               &kp DEL
             >;
 
