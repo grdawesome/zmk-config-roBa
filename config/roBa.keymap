@@ -38,6 +38,51 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
+
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <1 2>;
+        };
+
+        doubleQuot {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <2 3>;
+        };
+
+        shrape {
+            bindings = <&kp HASH>;
+            key-positions = <4 3>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <15 14>;
+        };
+
+        per {
+            bindings = <&kp PERCENT>;
+            key-positions = <16 17>;
+        };
+
+        and {
+            bindings = <&kp AMPS>;
+            key-positions = <5 6>;
+        };
+
+        singleQuot {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <6 7>;
+        };
+
+        lpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <7 8>;
+        };
+
+        rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <8 9>;
+        };
     };
 
     macros {
@@ -67,7 +112,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                          &kp T                                                                   &kp Y        &kp U  &lt 5 I    &kp O      &kp P
 &kp A             &kp S         &kp D         &kp F                          &kp G                        &kp LS(LG(S))               &trans         &kp H        &kp J  &kp K      &kp L      &trans
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B                        &trans                      &trans         &kp N        &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B                        &mkp MCLK                   &trans         &kp N        &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_MUHENKAN  &lt_to_layer_0 3 INT_HENKAN  &lt_to_layer_0 1 SPACE      &kp BACKSPACE  &lt 2 ENTER                               &kp DEL
             >;
 
