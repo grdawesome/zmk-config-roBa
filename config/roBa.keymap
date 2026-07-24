@@ -161,6 +161,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            flavor = "balanced";
         };
     };
 
@@ -170,9 +171,9 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                          &kp T                                                                   &kp Y      &kp U  &lt 5 I    &kp O      &kp P
-&kp A             &kp S         &kp D         &kp F                          &kp G                        &kp LS(LG(S))               &kp SQT        &kp H      &kp J  &kp K      &kp L      &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B                        &lt 6 ESC                   &kp BACKSLASH  &kp N      &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_MUHENKAN  &lt_to_layer_0 2 INT_HENKAN  &lt_to_layer_0 1 SPACE      &kp BACKSPACE  &kp ENTER                               &kp BACKSPACE
+&kp A             &kp S         &kp D         &kp F                          &kp G                        &kp LS(LG(S))               &kp SQT        &kp H      &kp J  &kp K      &kp L      &kp BACKSPACE
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B                        &lt 6 ESC                   &kp BACKSLASH  &kp N      &kp M  &mkp LCLK  &mkp RCLK  &kp ENTER
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_MUHENKAN  &lt_to_layer_0 2 INT_HENKAN  &lt_to_layer_0 1 SPACE      &kp BACKSPACE  &kp ENTER                               &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
