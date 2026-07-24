@@ -201,7 +201,7 @@
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                      &trans  &trans    &kp PAGE_UP    &trans   &trans
 &kp TAB         &kp LEFT_ARROW          &trans          &kp RIGHT_ARROW          &trans  &trans      &trans  &trans  &kp HOME  &trans         &kp END  &trans
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans  &trans      &trans  &trans  &trans    &kp PAGE_DOWN  &trans   &kp RIGHT_SHIFT
-&kp LCTRL       &trans                  &trans          &trans                   &trans  &trans      &trans  &trans                                    &trans
+&kp LCTRL       &kp LEFT_GUI            &kp LEFT_ALT    &trans                   &trans  &trans      &trans  &trans                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
