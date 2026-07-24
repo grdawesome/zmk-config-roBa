@@ -172,7 +172,7 @@
 &kp Q             &kp W         &kp E         &kp R                          &kp T                                                                   &kp Y      &kp U  &lt 5 I    &kp O      &kp P
 &kp A             &kp S         &kp D         &kp F                          &kp G                        &kp LS(LG(S))               &kp SQT        &kp H      &kp J  &kp K      &kp L      &kp SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B                        &lt 6 ESC                   &kp BACKSLASH  &kp N      &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_MUHENKAN  &lt_to_layer_0 2 INT_HENKAN  &lt_to_layer_0 1 SPACE      &kp BACKSPACE  &kp ENTER                               &kp DEL
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_MUHENKAN  &lt_to_layer_0 2 INT_HENKAN  &lt_to_layer_0 1 SPACE      &kp BACKSPACE  &kp ENTER                               &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -180,10 +180,10 @@
 
         NUM {
             bindings = <
-&kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9  &kp MINUS   &kp PLUS                                                       &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp EXCLAMATION   &kp AT_SIGN        &kp HASH
-&kp NUMBER_4             &kp NUMBER_5  &kp NUMBER_6  &kp SLASH   &kp ASTERISK  &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS  &kp LESS_THAN   &kp GREATER_THAN  &kp DOLLAR        &kp PERCENT        &kp CARET
-&mt LEFT_SHIFT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp EQUAL     &kp LEFT_BRACKET          &kp RIGHT_BRACKET      &kp SEMICOLON   &kp COLON         &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp AMPERSAND
-&kp NUMBER_0             &kp LEFT_GUI  &trans        &trans      &trans        &trans                    &kp BACKSLASH          &kp COMMA                                                              &kp UNDERSCORE
+&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS   &kp PLUS                                                       &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp EXCLAMATION   &kp AT_SIGN        &kp HASH
+&kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH   &kp ASTERISK  &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS  &kp LESS_THAN   &kp GREATER_THAN  &kp DOLLAR        &kp PERCENT        &kp CARET
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp EQUAL     &kp LEFT_BRACKET          &kp RIGHT_BRACKET      &kp SEMICOLON   &kp COLON         &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp AMPERSAND
+&kp NUMBER_0  &kp LEFT_GUI  &trans        &trans      &trans        &trans                    &kp BACKSLASH          &kp COMMA                                                              &kp UNDERSCORE
             >;
         };
 
