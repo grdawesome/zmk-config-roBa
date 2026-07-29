@@ -23,7 +23,7 @@
 
         // レイヤー5がアクティブなときのスクロール設定
         scroller {
-            layers = <5>;
+            layers = <4>;
             process-next;
         };
     };
