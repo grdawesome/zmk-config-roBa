@@ -21,10 +21,9 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        // レイヤー5用のスクロール設定
+        // レイヤー5がアクティブなときのスクロール設定
         scroller {
             layers = <5>;
-            xy-swap; // 必要に応じて軸入れ替えなど
             process-next;
         };
     };
