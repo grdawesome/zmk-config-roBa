@@ -21,7 +21,6 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        // レイヤー5がアクティブなときのスクロール設定
         scroller {
             layers = <4>;
             process-next;
