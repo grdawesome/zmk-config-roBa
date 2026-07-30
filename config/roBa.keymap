@@ -40,106 +40,54 @@
             layers = <0>;
         };
 
-        exclamation {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <1 2>;
-            layers = <0>;
-        };
-
-        at {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <2 3>;
-            layers = <0>;
-        };
-
-        shrape {
-            bindings = <&kp HASH>;
-            key-positions = <4 3>;
-            layers = <0>;
-        };
-
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <15 14>;
-            layers = <0>;
-        };
-
-        per {
-            bindings = <&kp PERCENT>;
-            key-positions = <26 27>;
-            layers = <0>;
-        };
-
-        caret {
-            bindings = <&kp CARET>;
-            key-positions = <28 29>;
-            layers = <0>;
-        };
-
-        and {
-            bindings = <&kp AMPS>;
-            key-positions = <16 17>;
-            layers = <0>;
-        };
-
-        aster {
-            bindings = <&kp ASTERISK>;
-            key-positions = <5 6>;
-            layers = <0>;
-        };
-
-        lpar {
-            bindings = <&kp LPAR>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        rpar {
-            bindings = <&kp RPAR>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
-        lessThan {
-            bindings = <&kp COMMA>;
-            key-positions = <28 29>;
-            layers = <0>;
-        };
-
-        gt {
-            bindings = <&kp PERIOD>;
-            key-positions = <29 30>;
-            layers = <0>;
-        };
-
-        fl {
-            bindings = <&kp FSLH>;
-            key-positions = <30 31>;
-            layers = <0>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <16 17>;
-            layers = <0>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
+        lclk {
+            bindings = <&mkp MB4>;
             key-positions = <17 18>;
-            layers = <0>;
         };
 
-        lbkt {
-            bindings = <&kp LBKT>;
+        rclk {
+            bindings = <&mkp MB5>;
             key-positions = <18 19>;
-            layers = <0>;
         };
 
-        rbkt {
-            bindings = <&kp RBKT>;
+        mb4 {
+            bindings = <&mkp LCLK>;
+            key-positions = <29 30>;
+        };
+
+        mb5 {
+            bindings = <&mkp RCLK>;
+            key-positions = <30 31>;
+        };
+
+        up {
+            bindings = <&kp UP_ARROW>;
             key-positions = <19 20>;
-            layers = <0>;
+        };
+
+        down {
+            bindings = <&kp DOWN>;
+            key-positions = <32 31>;
+        };
+
+        pgup {
+            bindings = <&kp PG_UP>;
+            key-positions = <12 13>;
+        };
+
+        pgdown {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <24 25>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <23 24>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <26 25>;
         };
     };
 
@@ -169,10 +117,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R               &kp T                                                &kp Y       &kp U  &kp I      &kp O      &kp P
-&kp A      &kp S         &kp D         &kp F               &kp G             &mt LS(LG(S)) F4      &kp COMMA    &kp H       &kp J  &kp K      &kp L      &kp RETURN
-&kp Z      &kp X         &kp C         &kp V               &kp B             &lt 4 TAB             &kp DOT      &kp N       &kp M  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_MUHENKAN  &lt 2 INT_HENKAN  &lt 1 SPACE           &lt 5 SPACE  &kp DELETE                               &kp RIGHT_SHIFT
+&kp Q      &kp W         &kp E         &kp R            &kp T                                          &kp Y          &kp U  &kp I     &kp O      &kp P
+&kp A      &kp S         &kp D         &kp F            &kp G      &mt LS(LG(S)) MINUS      &kp COMMA  &kp H          &kp J  &kp K     &kp L      &kp RETURN
+&kp Z      &kp X         &kp C         &kp V            &kp B      &lt 4 SEMICOLON          &kp DOT    &kp N          &kp M  &kp LEFT  &kp RIGHT  &kp RIGHT_SHIFT
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LC(SPACE)  &lt 2 TAB  &lt 1 SPACE              &lt 5 DEL  &kp BACKSPACE                              &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
