@@ -41,22 +41,22 @@
         };
 
         lclk {
-            bindings = <&mkp MB4>;
+            bindings = <&mkp LCLK>;
             key-positions = <17 18>;
         };
 
         rclk {
-            bindings = <&mkp MB5>;
+            bindings = <&mkp RCLK>;
             key-positions = <18 19>;
         };
 
         mb4 {
-            bindings = <&mkp LCLK>;
+            bindings = <&mkp MB4>;
             key-positions = <29 30>;
         };
 
         mb5 {
-            bindings = <&mkp RCLK>;
+            bindings = <&mkp MB5>;
             key-positions = <30 31>;
         };
 
@@ -117,10 +117,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R            &kp T                                          &kp Y          &kp U  &kp I     &kp O      &kp P
-&kp A      &kp S         &kp D         &kp F            &kp G      &mt LS(LG(S)) MINUS      &kp COMMA  &kp H          &kp J  &kp K     &kp L      &kp RETURN
-&kp Z      &kp X         &kp C         &kp V            &kp B      &lt 4 SEMICOLON          &kp DOT    &kp N          &kp M  &kp LEFT  &kp RIGHT  &kp RIGHT_SHIFT
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LC(SPACE)  &lt 2 TAB  &lt 1 SPACE              &lt 5 DEL  &kp BACKSPACE                              &kp RCTRL
+&kp Q      &kp W         &kp E         &kp R            &kp T                                      &kp Y          &kp U  &kp I     &kp O      &kp P
+&kp A      &kp S         &kp D         &kp F            &kp G      &lt 4 MINUS          &kp COMMA  &kp H          &kp J  &kp K     &kp L      &kp RETURN
+&kp Z      &kp X         &kp C         &kp V            &kp B      &lt 3 SEMICOLON      &kp DOT    &kp N          &kp M  &kp LEFT  &kp RIGHT  &kp RIGHT_SHIFT
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LC(SPACE)  &lt 2 TAB  &lt 1 SPACE          &lt 5 DEL  &kp BACKSPACE                              &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -147,7 +147,7 @@
         ARROW {
             bindings = <
 &kp ESCAPE      &trans        &trans         &trans   &trans                      &trans    &trans          &trans          &trans     &trans
-&kp TAB         &trans        &kp PAGE_UP    &trans   &trans  &trans      &trans  &mkp MB5  &trans          &kp UP_ARROW    &trans     &trans
+&kp TAB         &trans        &kp PAGE_UP    &trans   &trans  &trans      &trans  &mkp MB5  &mkp LCLK       &kp UP_ARROW    &mkp RCLK  &trans
 &kp LEFT_SHIFT  &kp HOME      &kp PAGE_DOWN  &kp END  &trans  &trans      &trans  &mkp MB4  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans
 &kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT   &trans   &trans  &trans      &trans  &trans                                               &kp RIGHT_SHIFT
             >;
