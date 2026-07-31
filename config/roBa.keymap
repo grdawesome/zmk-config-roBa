@@ -40,36 +40,6 @@
             layers = <0>;
         };
 
-        lclk {
-            bindings = <&mkp LCLK>;
-            key-positions = <17 18>;
-        };
-
-        rclk {
-            bindings = <&mkp RCLK>;
-            key-positions = <18 19>;
-        };
-
-        mb4 {
-            bindings = <&mkp MB4>;
-            key-positions = <29 30>;
-        };
-
-        mb5 {
-            bindings = <&mkp MB5>;
-            key-positions = <30 31>;
-        };
-
-        up {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <19 20>;
-        };
-
-        down {
-            bindings = <&kp DOWN>;
-            key-positions = <32 31>;
-        };
-
         pgup {
             bindings = <&kp PG_UP>;
             key-positions = <12 13>;
@@ -88,6 +58,36 @@
         end {
             bindings = <&kp END>;
             key-positions = <26 25>;
+        };
+
+        mb4 {
+            bindings = <&mkp MB4>;
+            key-positions = <17 18>;
+        };
+
+        mb5 {
+            bindings = <&mkp MB5>;
+            key-positions = <19 20>;
+        };
+
+        left {
+            bindings = <&kp LEFT>;
+            key-positions = <29 30>;
+        };
+
+        right {
+            bindings = <&kp RIGHT>;
+            key-positions = <31 32>;
+        };
+
+        up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <18 19>;
+        };
+
+        down {
+            bindings = <&kp DOWN>;
+            key-positions = <30 31>;
         };
     };
 
@@ -117,10 +117,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                    &kp T                                      &kp Y          &kp U  &kp I     &kp O      &kp P
-&kp A      &kp S         &kp D         &kp F                    &kp G      &lt 4 MINUS          &kp COMMA  &kp H          &kp J  &kp K     &kp L      &kp RETURN
-&kp Z      &kp X         &kp C         &kp V                    &kp B      &lt 3 SEMICOLON      &kp DOT    &kp N          &kp M  &kp LEFT  &kp RIGHT  &kp RIGHT_SHIFT
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LS(LG(S)) LC(SPACE)  &lt 2 TAB  &lt 1 SPACE          &lt 5 DEL  &kp BACKSPACE                              &kp RCTRL
+&kp Q      &kp W         &kp E         &kp R                    &kp T                                      &kp Y          &kp U  &kp I      &kp O      &kp P
+&kp A      &kp S         &kp D         &kp F                    &kp G      &lt 3 MINUS          &kp COMMA  &kp H          &kp J  &kp K      &kp L      &kp RETURN
+&kp Z      &kp X         &kp C         &kp V                    &kp B      &lt 4 SEMICOLON      &kp DOT    &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp RIGHT_SHIFT
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LS(LG(S)) LC(SPACE)  &lt 2 TAB  &lt 1 SPACE          &lt 5 DEL  &kp BACKSPACE                               &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
